@@ -4,35 +4,15 @@ import { Users, Truck, BarChart3, Building2, Recycle } from 'lucide-react';
 const Home = () => {
   const team = [
     {
-      name: '',
-      role: '',
-      image: ''
-    },
-    {
-      name: '',
-      role: '',
-      image: ''
-    },
-    {
       name: 'Wahid Jenhani',
       role: 'Directeur Générale',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQlDyQM5QMjs9dPahMugZy6mBHBLPuYyZKA&s?auto=format&fit=crop&q=80&w=200&h=200'
-    },
-    {
-      name: '',
-      role: '',
-      image: ''
-    },
-    {
-      name: '',
-      role: '',
-      image: ''
-    },
+    }
   ];
 
   return (
     <div className="space-y-20">
-      {/* Hero Section */}
+
       <section className="relative bg-green-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -40,61 +20,12 @@ const Home = () => {
               Ensemble pour un avenir plus propre
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Nous révolutionnons la gestion des déchets pour les professionnels avec des solutions innovantes et écologiques.
+              Nous révolutionnons la gestion des déchets pour les professionnels
+              avec des solutions innovantes et écologiques.
             </p>
             <button className="bg-white text-green-600 px-8 py-3 rounded-md font-medium text-lg hover:bg-green-100 transition">
               Devenir partenaire
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Nos Services de Collecte</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: 'Cartons',
-              icon: <Building2 className="h-12 w-12 text-green-600" />,
-              description: 'Collecte et recyclage de cartons pour commerces et entreprises'
-            },
-            {
-              title: 'Aluminium',
-              icon: <Recycle className="h-12 w-12 text-green-600" />,
-              description: 'Récupération et valorisation des déchets aluminium'
-            },
-            {
-              title: 'Verre',
-              icon: <Truck className="h-12 w-12 text-green-600" />,
-              description: 'Collecte du verre pour les cafés, bars et restaurants'
-            }
-          ].map((service, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <div className="flex justify-center mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Impact Stats */}
-      <section className="bg-gray-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Notre Impact</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { number: '500+', label: 'Partenaires', icon: <Users className="h-8 w-8" /> },
-              { number: '1000T', label: 'Déchets collectés', icon: <Truck className="h-8 w-8" /> },
-              { number: '30%', label: 'Réduction CO2', icon: <BarChart3 className="h-8 w-8" /> }
-            ].map((stat, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow text-center">
-                <div className="flex justify-center mb-4 text-green-600">{stat.icon}</div>
-                <div className="text-4xl font-bold text-green-600 mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -114,6 +45,82 @@ const Home = () => {
               <p className="text-gray-600 text-sm">{member.role}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Nos Services de Collecte
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Cartons",
+              icon: <Building2 className="h-12 w-12 text-green-600" />,
+              description:
+                "Collecte et recyclage de cartons pour commerces et entreprises",
+            },
+            {
+              title: "Aluminium",
+              icon: <Recycle className="h-12 w-12 text-green-600" />,
+              description: "Récupération et valorisation des déchets aluminium",
+            },
+            {
+              title: "Verre",
+              icon: <Truck className="h-12 w-12 text-green-600" />,
+              description:
+                "Collecte du verre pour les cafés, bars et restaurants",
+            },
+          ].map((service, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-lg text-center"
+            >
+              <div className="flex justify-center mb-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-gray-600">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Impact Stats */}
+      <section className="bg-gray-100 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">Notre Impact</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                number: "500+",
+                label: "Partenaires",
+                icon: <Users className="h-8 w-8" />,
+              },
+              {
+                number: "1000T",
+                label: "Déchets collectés",
+                icon: <Truck className="h-8 w-8" />,
+              },
+              {
+                number: "30%",
+                label: "Réduction CO2",
+                icon: <BarChart3 className="h-8 w-8" />,
+              },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow text-center"
+              >
+                <div className="flex justify-center mb-4 text-green-600">
+                  {stat.icon}
+                </div>
+                <div className="text-4xl font-bold text-green-600 mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-gray-600">{stat.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
