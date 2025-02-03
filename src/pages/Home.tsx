@@ -4,30 +4,30 @@ import { Users, Truck, BarChart3, Building2, Recycle } from 'lucide-react';
 const Home = () => {
   const team = [
     {
-      name: 'Marie Laurent',
-      role: 'Directrice Générale',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200'
+      name: '',
+      role: '',
+      image: ''
     },
     {
-      name: 'Thomas Dubois',
-      role: 'Responsable Opérations',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200'
+      name: '',
+      role: '',
+      image: ''
     },
     {
-      name: 'Sophie Martin',
-      role: 'Responsable Développement',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200'
+      name: 'Wahid Jenhani',
+      role: 'Directeur Générale',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQlDyQM5QMjs9dPahMugZy6mBHBLPuYyZKA&s?auto=format&fit=crop&q=80&w=200&h=200'
     },
     {
-      name: 'Lucas Petit',
-      role: 'Responsable Technique',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200'
+      name: '',
+      role: '',
+      image: ''
     },
     {
-      name: 'Emma Bernard',
-      role: 'Responsable Communication',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200'
-    }
+      name: '',
+      role: '',
+      image: ''
+    },
   ];
 
   return (
